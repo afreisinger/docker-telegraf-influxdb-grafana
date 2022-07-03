@@ -16,10 +16,10 @@ First download and install the latest available version of Docker Compose <https
 In order to start the service the first time launch:
 
 ```sh
-COMPOSE_PROFILES=grafana,telegraf docker-compose up -d
+COMPOSE_PROFILES=grafana,telegraf docker-compose up --build -d
 ```
 
-You can replace `COMPOSE_PROFILES=grafana,telegraf` with the desired profiles to launch, you can launch only InfluxDB (default with no profiles).
+You can replace `COMPOSE_PROFILES=grafana,telegraf` with the desired profiles to launch, you can launch only InfluxDB (default with no profiles). Then you can skip `--build` parameter
 
 To stop the service launch:
 

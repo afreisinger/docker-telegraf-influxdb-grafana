@@ -1,4 +1,4 @@
-# Docker service with Telegraf and InfluxDB
+# Monitoring Docker service with Telegraf and InfluxDB
 
 
 ## Versions
@@ -33,7 +33,7 @@ COMPOSE_PROFILES=grafana,telegraf docker-compose down
 Host		Container		Service
 
 3000		3000			grafana
-8086		8086		  	influxdb
+8086		8086		 influxdb
 8125		8125			statsd
 ```
 
@@ -87,7 +87,7 @@ influx apply -f https://raw.githubusercontent.com/influxdata/community-templates
 ```
 
 Go to Dashboards on Influx UI, and you can see a Docker link to visualization.
-You can export query to grafana, too, a grafanba container is running.
+You can export query to grafana, too. A grafana container is running.
 
 ### Templates
 

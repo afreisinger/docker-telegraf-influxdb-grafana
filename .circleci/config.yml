@@ -17,7 +17,7 @@ jobs:
 
       - run:
           name: Start Docker Compose service
-          command: COMPOSE_PROFILES=grafana,telegraf docker-compose --build up -d
+          command: COMPOSE_PROFILES=grafana,telegraf docker-compose up -d
 
       - run:
           name: Wait service warmup

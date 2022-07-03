@@ -1,5 +1,4 @@
 *.db
-.circleci
 _*.*
 /bin
 /mosquitto

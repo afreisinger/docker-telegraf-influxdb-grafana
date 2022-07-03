@@ -1,0 +1,6 @@
+*.db
+.circleci
+_*.*
+/bin
+/mosquitto
+/nodered

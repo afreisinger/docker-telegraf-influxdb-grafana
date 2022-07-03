@@ -1,4 +1,9 @@
-# Monitoring Docker service with Telegraf and InfluxDB
+# Monitoring Docker service with Telegraf, InfluxDB and Grafana
+
+:facepunch: Tested
+
+[![CircleCI](https://circleci.com/gh/afreisinger/docker-telegraf-influxdb-grafana.svg?style=svg)](https://circleci.com/gh/afreisinger/docker-telegraf-influxdb-grafana)
+
 
 
 ## Versions
@@ -16,10 +21,10 @@ First download and install the latest available version of Docker Compose <https
 In order to start the service the first time launch:
 
 ```sh
-COMPOSE_PROFILES=grafana,telegraf docker-compose up --build -d
+COMPOSE_PROFILES=grafana,telegraf docker-compose up -d
 ```
 
-You can replace `COMPOSE_PROFILES=grafana,telegraf` with the desired profiles to launch, you can launch only InfluxDB (default with no profiles). Then you can skip `--build` parameter
+You can replace `COMPOSE_PROFILES=grafana,telegraf` with the desired profiles to launch, you can launch only InfluxDB (default with no profiles).
 
 To stop the service launch:
 
